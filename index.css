@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:  hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.wrapper{
+    width: 80vw;
+    display: flex;
+    border-radius: 8px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.5rem;
+    border-radius: 8px 0 0 8px;   
+}
+
+.card2{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2.5rem;
+}
+
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.wrapper img{
+    margin-bottom: 1.5rem;
+    width: 50px;
+}
+.wrapper h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 95%);
+}
+.wrapper p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.wrapper button{
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+.wrapper .btn{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: auto;
+}
+
+.wrapper .btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.wrapper .btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+.wrapper .btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 1000px){
+    .wrapper{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .wrapper{
+        width: 85vw;
+    }
+    .card1{
+        padding: 1.5rem;  
+    }
+    
+    .card2{
+        padding: 1.5rem;
+    }
+    
+    .card3{
+        padding: 1.5rem;
+    }
+    .wrapper button{
+        width: 80%;
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 575px){
+    .wrapper{
+        width: 80vw;
+        height: 100%;
+        flex-direction: column;
+        margin: 3rem .5rem;
+    }
+    .card1{
+        padding: 3rem;
+        border-radius: 8px 8px 0 0;   
+    }
+    
+    .card2{
+        padding: 3rem;
+    }
+    
+    .card3{
+        padding: 3rem;
+        border-radius: 0 0 8px 8px;
+    }
+    .wrapper button{
+        width: 50%;
+        padding: 8px;
+    }
+}
